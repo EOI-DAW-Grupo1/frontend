@@ -1,46 +1,22 @@
 <template>
-  <section class="delicious-section contact-section">
-    <div class="container mt-5">
-      <div class="columns d-flex justify-content-center">
-        <div class="column is-6">
-          <div class="contact-form">
-            <div class="columns is-multiline">
-              <div class="column is-12">
-                <h3>Login</h3>
-                <p>
-                  Please enter your email and password to process to the
-                  customer area.
-                </p>
-                <p>If you have't an account please click</p>
-              </div>
-              <div class="column is-6">
-                <div class="form-group">
-                  <input
-                    v-model="email"
-                    type="email"
-                    class="form-control"
-                    placeholder="Your email"
-                  />
-                </div>
-              </div>
-              <div class="column is-6">
-                <div class="form-group">
-                  <input
-                    v-model="password"
-                    type="password"
-                    class="form-control"
-                    placeholder="Your password"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="form-group d-flex justify-content-center">
-              <button class="button is-warning" @click="login">Login</button>
-            </div>
+  <section>
+    <div class="columns is-mobile is-centered">
+      <div class="column is-half ">
+        <h1 class="title">Login</h1>
+        <b-field label="Email">
+          <b-input type="email"></b-input>
+        </b-field>
+        <b-field label="Password">
+          <b-input type="password" password-reveal></b-input>
+        </b-field>
+              <button class="button is-success" @click="login">
+                Login
+              </button>
+          
+           <h2 class="subtitle is-6">If you do not have an account, please <a class="tag is-info is-medium" href="/registro.html">register here</a></h2>
           </div>
-        </div>
       </div>
-    </div>
+      
   </section>
 </template>
 
@@ -67,7 +43,7 @@ export default {
 
         this.$store.dispatch('login', token)
     
-        this.$router.push("/my-orders")
+        this.$router.push("/")
       } catch (error) {
         alert("Usuario y/o contraseña incorrectos.")
       }

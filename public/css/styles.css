@@ -1,52 +1,6 @@
-/*** uncss> filename: https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700 ***/
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf) format('truetype');
-}
-
-/*** uncss> filename: https://fonts.googleapis.com/css?family=Josefin+Sans ***/
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKg.ttf) format('truetype');
-}
-
-/*** uncss> filename: https://fonts.googleapis.com/css?family=Nothing+You+Could+Do ***/
-@font-face {
-  font-family: 'Nothing You Could Do';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/nothingyoucoulddo/v10/oY1B8fbBpaP5OX3DtrRYf_Q2BPB1SnfZb3OOnV4.ttf) format('truetype');
-}
 
 /*** uncss> filename: css/open-iconic-bootstrap.min.css ***/
+/*ESTO SON  ICONOS CREO*/
 @font-face{font-family:Icons;src:url(../fonts/open-iconic/open-iconic.eot);src:url(../fonts/open-iconic/open-iconic.eot?#iconic-sm) format('embedded-opentype'),url(../fonts/open-iconic/open-iconic.woff) format('woff'),url(../fonts/open-iconic/open-iconic.ttf) format('truetype'),url(../fonts/open-iconic/open-iconic.otf) format('opentype'),url(../fonts/open-iconic/open-iconic.svg#iconic-sm) format('svg');font-weight:400;font-style:normal}
 
 /*** uncss> filename: css/ionicons.min.css ***/
@@ -60,7 +14,10 @@
   Material Design Icons: https://github.com/google/material-design-icons
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
-*/@font-face{font-family:"Ionicons";src:url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19");src:url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19#iefix") format("embedded-opentype"),url("../fonts/ionicons/fonts/ionicons.woff2?v=4.0.0-19") format("woff2"),url("../fonts/ionicons/fonts/ionicons.woff?v=4.0.0-19") format("woff"),url("../fonts/ionicons/fonts/ionicons.ttf?v=4.0.0-19") format("truetype"),url("../fonts/ionicons/fonts/ionicons.svg?v=4.0.0-19#Ionicons") format("svg");font-weight:normal;font-style:normal}
+*/
+
+/*ESTO SON  ICONOS CREO*/
+@font-face{font-family:"Ionicons";src:url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19");src:url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19#iefix") format("embedded-opentype"),url("../fonts/ionicons/fonts/ionicons.woff2?v=4.0.0-19") format("woff2"),url("../fonts/ionicons/fonts/ionicons.woff?v=4.0.0-19") format("woff"),url("../fonts/ionicons/fonts/ionicons.ttf?v=4.0.0-19") format("truetype"),url("../fonts/ionicons/fonts/ionicons.svg?v=4.0.0-19#Ionicons") format("svg");font-weight:normal;font-style:normal}
 
 /*** uncss> filename: css/flaticon.css ***/
 	/*
@@ -116,7 +73,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with bcolumnsser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -169,14 +125,13 @@
 
 /*** uncss> filename: css/style.css ***/
 body {
-    font-family: "Poppins", Arial, sans-serif;
-    background: #121618;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.8;
     font-weight: 300;
-    color: gray;
-    background: url(../images/bg_4.jpg) no-repeat fixed;
-    background-size: cover;
+    color: rgb(0, 0, 0);
+    background: rgb(235, 235, 235);
+
 }
 
 span {
@@ -187,21 +142,25 @@ a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #fac564;
+    color: #000000;
 }
 
-a:hover, a:active, a:focus {
+/* a:hover, a:active, a:focus {
     color: #fac564;
     outline: none !important;
     text-decoration: none !important;
-}
+} POR AHORA NO HE OBSERVADO CAMBIOS EN ENLACES HACIENDO HOVER, PERO NO LO BORRO POR SI ACASO */ 
 
 h1, h2, h3, h4, .h4 {
     line-height: 1.4;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 400;
-    font-family: "Josefin Sans", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
+input {
+    width: 30%;
+}
+
 
 .navbar-brand {
     font-size: 24px;
@@ -221,7 +180,7 @@ h1, h2, h3, h4, .h4 {
     color: #fac564;
     letter-spacing: 4px;
 }
-
+/*  COMENTADO PORQUE EN UN PRINCIPIO NO VA A HACER FALTA PERO AUN POR COMPROBAR
 .slider.home-slider {
     position: relative;
     height: calc(100vh - 80px);
@@ -281,16 +240,10 @@ h1, h2, h3, h4, .h4 {
     line-height: 1.5;
     font-weight: 300;
     color: white;
-}
+} */
 
-.delicious-intro .wrap {
-    width: 100%;
-}
 
-.delicious-intro .wrap .info {
-    background: #000;
-    padding: 30px;
-}
+
 
 @media (min-width: 1200px) {
     .delicious-intro .wrap .info {
@@ -320,65 +273,6 @@ h1, h2, h3, h4, .h4 {
     }
 }
 
-.delicious-intro .wrap .social .social-icon {
-    margin: 0;
-    padding: 0;
-}
-
-.delicious-intro .wrap .social .social-icon li {
-    list-style: none;
-    display: inline-block;
-    line-height: 0;
-    padding: 0 10px;
-}
-
-.delicious-intro .wrap .social .social-icon li a {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.delicious-intro .wrap .social .social-icon li a span {
-    color: #fff;
-    font-size: 20px;
-}
-
-.delicious-intro .wrap h3 {
-    font-size: 16px;
-}
-
-.delicious-intro .wrap .text {
-    width: calc(100% - 40px);
-}
-
-.delicious-intro .wrap .icon {
-    width: 40px;
-}
-
-.delicious-intro .wrap .icon span {
-    color: #fac564;
-    font-size: 20px;
-}
-
-.delicious-services {
-    background: url(../images/food.png) repeat;
-    color: #5c3d03;
-}
-
-.delicious-services .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    background: #fac564;
-    opacity: 0;
-}
-
-.delicious-services .heading-section h2 {
-    color: black;
-}
 
 .services .icon {
     width: 100px;

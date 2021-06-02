@@ -14,6 +14,11 @@
 import MainNav from '@/components/MainNav'
 import MainFooter from '@/components/MainFooter'
 import {routes}  from '@/router'
+import Vue from 'vue'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+
+Vue.use(Buefy)
 export default {
   name: "App",
   data(){
