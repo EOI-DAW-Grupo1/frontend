@@ -1,5 +1,5 @@
 <template>
-  <footer class="delicious-footer delicious-section img">
+  <!-- <footer class="delicious-footer delicious-section img">
     <div class="overlay"></div>
     <div class="container">
       <div class="columns mb-5">
@@ -125,16 +125,16 @@
       <div class="columns">
         <div class="col-md-12 has-text-centered">
           <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
             Copyright 2021 All rights reserved | This template is made with
             <i aria-hidden="true" class="icon-heart"></i> by
             <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
           </p>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <script>
