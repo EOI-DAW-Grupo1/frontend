@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 
-    <PizzaWall />
+    <ArticleWall />
 
 
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 
-import ArticleWall from "@/components/PizzaWall"
+import ArticleWall from "@/components/ArticleWall"
 
 export default {
   name: 'Home',
   components: {
-    PizzaWall
+    ArticleWall
   }
 }
 </script>
