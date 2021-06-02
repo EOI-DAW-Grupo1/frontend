@@ -12,6 +12,23 @@ class Article {
             throw error
         }
     }
+
+    async upload(articleData){
+        try {
+            // const token = store.state.token
+            // const config = {
+            //     headers: {
+            //       Authorization: `Bearer ${token}`,
+            //     },
+            // }
+        
+            const response = await this.axios.post("articles", articleData, config)
+            
+            return response.data
+        }catch(error){
+            throw error
+        }        
+    }
 }
 
 export default Article

@@ -2,6 +2,7 @@
   <div class="home">
 
     <ArticleWall />
+    <ArticleCreatorForm />
 
 
   </div>
@@ -10,11 +11,13 @@
 <script>
 
 import ArticleWall from "@/components/ArticleWall"
+import ArticleCreatorForm from "@/components/ArticleCreatorForm"
 
 export default {
   name: 'Home',
   components: {
-    ArticleWall
+    ArticleWall,
+    ArticleCreatorForm
   }
 }
 </script>
