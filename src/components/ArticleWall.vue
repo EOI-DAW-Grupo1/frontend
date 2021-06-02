@@ -1,6 +1,8 @@
 <template>
   <section class="delicious-section">
 
+    <h1>article wall</h1>
+
     <div class="container-wrap">
       <div class="columns is-gapless is-flex is-multiline">
         <ArticleItem
@@ -32,6 +34,7 @@ export default {
   async beforeMount() {
     try {
       this.articles = await this.$api.articles.list();
+      console.log(this.articles)
     } catch (error) {
       alert(error.message);
     }
