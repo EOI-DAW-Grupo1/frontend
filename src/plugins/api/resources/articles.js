@@ -21,6 +21,7 @@ class Article {
             //       Authorization: `Bearer ${token}`,
             //     },
             // }
+            const config ={}
         
             const response = await this.axios.post("articles", articleData, config)
             

@@ -6,7 +6,7 @@
             <h3>{{value.title}}</h3>
             <h4>{{value.published_at}}</h4>
             <h4>{{value.category}}</h4>
-            <p>{{value.content}}</p>
+            <p>{{value.excerpt}}</p>
         </div>
         
     </div>

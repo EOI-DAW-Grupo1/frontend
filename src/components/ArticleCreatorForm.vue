@@ -46,7 +46,7 @@
                     v-model="articleCategory"
                     type="text"
                     class="form-control"
-                    placeholder="Category"
+                    placeholder="Category (General es una de las permitidas)"
                   />
                 </div>
               </div>
@@ -79,13 +79,18 @@ export default {
       try {
         const articleData = {
           title: this.articleTitle,
+          slug: "",
           excerpt: this.articleExcerpt,
-          category: this.articleCategory,
+          category: this.articleCategory
         }
+
+        console.log(articleData)
         
         const response = await this.$api.articles.upload(articleData)
+        console.log(response)
 
       } catch (error) {
+        console.log(error)
         alert("Article could not be uploaded.")
       }
     },
