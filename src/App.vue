@@ -30,11 +30,11 @@ export default {
       return routes.filter( item => !item.meta.hideInMenu )
     }
   },
-  mounted(){
-    this.$api.sayHello()
-    const token = localStorage.getItem('jwt-token')
+  // mounted(){
+  //   this.$api.sayHello()
+  //   const token = localStorage.getItem('jwt-token')
 
-    this.$store.dispatch('login',token)
-  }
+  //   this.$store.dispatch('login',token)
+  // }
 }
 </script>

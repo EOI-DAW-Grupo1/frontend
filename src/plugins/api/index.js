@@ -12,7 +12,7 @@ export default {
         Vue.prototype.$api = {
             // auth: new Auth(axios),
             // products: new Product(axios),
-            articles: new Product(axios),
+            articles: new Article(axios),
             // orders: new Order(axios)
         }
     }
