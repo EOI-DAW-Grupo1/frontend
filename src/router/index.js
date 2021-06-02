@@ -15,36 +15,36 @@ export const routes = [
     component: Home,
     meta: {hideInMenu: false}
   },
-  {
-    path: '/menu',
-    name: 'Carta',
-    component: Menu,
-    meta: {hideInMenu: false}
-  },
-  {
-    path: '/blog',
-    name: 'Blog',
-    component: Home,
-    meta: {hideInMenu: false}
-  },
-  {
-    path: '/contact',
-    name: 'Contacto',
-    component: Home,
-    meta: {hideInMenu: false}
-  },
+  // {
+  //   path: '/menu',
+  //   name: 'Carta',
+  //   component: Menu,
+  //   meta: {hideInMenu: false}
+  // },
+  // {
+  //   path: '/blog',
+  //   name: 'Blog',
+  //   component: Home,
+  //   meta: {hideInMenu: false}
+  // },
+  // {
+  //   path: '/contact',
+  //   name: 'Contacto',
+  //   component: Home,
+  //   meta: {hideInMenu: false}
+  // },
   {
     path: '/login',
     name: 'Login',
     component: Login,
     meta: {hideInMenu: true}
   },
-  {
-    path: '/my-orders',
-    name: 'Mis pedidos',
-    component: MyOrders,
-    meta: {hideInMenu: true, private: true}
-  },
+  // {
+  //   path: '/my-orders',
+  //   name: 'Mis pedidos',
+  //   component: MyOrders,
+  //   meta: {hideInMenu: true, private: true}
+  // },
 ]
 
 const router = new VueRouter({

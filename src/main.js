@@ -3,13 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import PizzaAPI from './plugins/api/index'
+import meneameAPI from './plugins/api/index'
 
-Vue.use(PizzaAPI, {baseURL: 'https://pizza-delicious-api.herokuapp.com/'})
+Vue.use(meneameAPI, {baseURL: 'https://meneame1.herokuapp.com/'})
 
-Vue.filter("toMoney", (money) => {
-  return money.toLocaleString("es-ES", { style: "currency", currency: "EUR"})
-})
+// Vue.filter("toMoney", (money) => {
+//   return money.toLocaleString("es-ES", { style: "currency", currency: "EUR"})
+// })
 
 Vue.config.productionTip = false
 

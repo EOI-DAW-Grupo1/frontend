@@ -1,12 +1,13 @@
 <template>
-      <nav aria-label="main navigation" class="navbar is-black p-3" role="navigation">
+      <nav aria-label="main navigation" class="navbar is-orange-custom p-3" role="navigation">
     <div class="container">
 
         <div class="navbar-brand">
             <a class="navbar-item" href="/index.html">
                 <div>
-                    <span class="flaticon-pizza-1 mr-1"></span>Pizza
-                    <small>Delicious</small>
+                    <!-- <span class="flaticon-pizza-1 mr-1"></span>Pizza
+                    <small>Delicious</small> -->
+                    <img src="https://www.meneame.net/img/mnm/logo-white.svg" alt="">
                 </div>
             </a>
             <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
@@ -76,5 +77,7 @@ export default {
 </script>
 
 <style>
-
+    .is-orange-custom {
+        background-color: rgb(199, 129, 0);
+    }
 </style>
