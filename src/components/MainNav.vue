@@ -1,5 +1,5 @@
 <template>
-      <nav aria-label="main navigation" class="navbar is-black p-3" role="navigation">
+      <nav aria-label="main navigation" class="navbar is-orange-custom p-3" role="navigation">
     <div class="container">
 
         <div class="navbar-brand">
@@ -78,5 +78,7 @@ export default {
 </script>
 
 <style>
-
+    .is-orange-custom {
+        background-color: rgb(199, 129, 0);
+    }
 </style>
