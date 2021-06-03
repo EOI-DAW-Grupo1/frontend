@@ -47,8 +47,9 @@ export default {
           email: this.email,
           password: this.password,
         }
-        
-        const response = await this.$api.auth.login(this.email, this.password)
+
+        const response = await this.$api.auth.register(this.email, this.password)
+
 
         const token = response.token        
 
@@ -56,7 +57,7 @@ export default {
     
         this.$router.push("/")
       } catch (error) {
-        alert("Usuario y/o contraseña incorrectos.")
+        throw error
       }
     },
   },
