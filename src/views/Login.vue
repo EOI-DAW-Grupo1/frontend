@@ -39,6 +39,7 @@ export default {
         }
         const response = await this.$api.auth.login(credentialsData)
         const token = response.token        
+        alert('token:\n'+token)
 
         this.$store.dispatch('login', token)
         this.$router.push("/")
