@@ -3,13 +3,15 @@ class Auth{
         this.axios = axios
     }
 
-    async login(email, password){
+    async login(credentialsData){
         try {
-            const response = await this.axios.post("auth/login", {email, password})
-            
+            const config ={}
+            const response = await this.axios.post("auth/login", credentialsData)
+            console.log(response.data)
             return response.data
         }catch(error){
-            throw error
+            console.log(error)
+            //throw error
         }
     }
 }

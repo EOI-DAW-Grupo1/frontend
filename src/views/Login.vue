@@ -4,10 +4,10 @@
       <div class="column is-half ">
         <h1 class="title">Login</h1>
         <b-field label="Email">
-          <b-input type="email"></b-input>
+          <b-input type="email" v-model="email"></b-input>
         </b-field>
         <b-field label="Password">
-          <b-input type="password" password-reveal></b-input>
+          <b-input type="password" password-reveal v-model="password"></b-input>
         </b-field>
               <button class="button is-success" @click="login">
                 Login
@@ -33,20 +33,18 @@ export default {
   methods: {
     async login() {
       try {
-        const credentials = {
+        const credentialsData = {
           email: this.email,
           password: this.password,
         }
-        
-        const response = await this.$api.auth.login(this.email, this.password)
-
+        const response = await this.$api.auth.login(credentialsData)
         const token = response.token        
 
         this.$store.dispatch('login', token)
-    
         this.$router.push("/")
       } catch (error) {
         alert("Usuario y/o contraseña incorrectos.")
+        //console.log(error)
       }
     },
   },
