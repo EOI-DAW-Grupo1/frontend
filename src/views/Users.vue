@@ -4,19 +4,19 @@
       <div class="column is-half">
         <h1 class="title">Register</h1>
         <b-field label="First Name">
-          <b-input type="text"></b-input>
+          <b-input type="text" v-model="firstname"></b-input>
         </b-field>
 
         <b-field label="Last Name">
-          <b-input type="text"></b-input>
+          <b-input type="text" v-model="lastname"></b-input>
         </b-field>
 
         <b-field label="Email">
-          <b-input type="email"></b-input>
+          <b-input type="email" v-model="email"></b-input>
         </b-field>
 
         <b-field label="Password">
-          <b-input type="password"></b-input>
+          <b-input type="password" v-model="password"></b-input>
         </b-field>
               <button class="button is-success" @click="register">
                 Create new user
