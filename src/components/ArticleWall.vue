@@ -1,17 +1,15 @@
 <template>
-  <section class="delicious-section">
+  <section class="has-background-warning-light">
 
-    <h1>Article Wall</h1>
+    <h1 class="title has-text-centered p-3">Article Wall</h1>
 
-    <div class="container-wrap">
-      <div class="columns is-gapless is-flex is-multiline">
+      <div class="column is-full">
         <ArticleItem
           v-for="item in articles"
           :value="item"
           :key="item._id"
         />
       </div>
-    </div>
 
   </section>
 </template>

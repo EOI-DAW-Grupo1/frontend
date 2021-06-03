@@ -1,65 +1,36 @@
 <template>
-  <section class="delicious-section contact-section">
+  <section class="has-background-warning-light p-2">
+    <h1 class="title has-text-centered">Article Creator Form</h1>
+    <div class="columns is-mobile is-centered m-5">
+        <div class="column is-half">
+          <b-field class="title" label="Title">
+          <b-input
+                v-model="articleTitle"
+                type="text"
+                class="form-control"
+              />
+        </b-field>
 
-    <h1>Article Creator Form</h1>
+         <b-field class="title" label="Category">
+              <b-input
+              v-model="articleCategory"
+              type="text"
+              class="form-control"
+              />
+            </b-field>
 
-    <div class="container mt-5">
-      <div class="columns d-flex justify-content-center">
-        <div class="column is-6">
-          <div class="contact-form">
-            <div class="columns is-multiline">
-
-              <div class="column is-12">
-                <h3>Title</h3>
-              </div>
-              <div class="column is-6">
-                <div class="form-group">
-                  <input
-                    v-model="articleTitle"
-                    type="text"
-                    class="form-control"
-                    placeholder="Title"
-                  />
-                </div>
-              </div>
-
-              <div class="column is-12">
-                <h3>Excerpt</h3>
-              </div>
-              <div class="column is-6">
-                <div class="form-group">
-                  <input
-                    v-model="articleExcerpt"
-                    type="text"
-                    class="form-control"
-                    placeholder="Excerpt"
-                  />
-                </div>
-              </div>
-
-              <div class="column is-12">
-                <h3>Category</h3>
-              </div>
-              <div class="column is-6">
-                <div class="form-group">
-                  <input
-                    v-model="articleCategory"
-                    type="text"
-                    class="form-control"
-                    placeholder="Category (General es una de las permitidas)"
-                  />
-                </div>
-              </div>
-
+          <b-field class="title" label="Excerpt">
+            <b-input
+              maxlength="500"
+              v-model="articleExcerpt"
+              type="textarea"
+              class="form-control"/>
+          </b-field>
+           <button class="button is-warning" @click="uploadArticle">
+                Upload Article
+              </button>
             </div>
-
-            <div class="form-group d-flex justify-content-center">
-              <button class="button is-warning" @click="uploadArticle">Upload Article</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
+            
     </div>
   </section>
 </template>
@@ -80,15 +51,15 @@ export default {
         const articleData = {
           title: this.articleTitle,
           slug: "",
-          excerpt: this.articleExcerpt,
-          category: this.articleCategory
+           category: this.articleCategory,
+          excerpt: this.articleExcerpt
+         
         }
 
         console.log(articleData)
         
         const response = await this.$api.articles.upload(articleData)
         console.log(response)
-
       } catch (error) {
         console.log(error)
         alert("Article could not be uploaded.")

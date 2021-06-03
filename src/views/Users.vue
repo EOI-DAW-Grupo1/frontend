@@ -1,20 +1,26 @@
 <template>
   <section>
-    <div class="columns is-mobile is-centered">
-      <div class="column is-half ">
-        <h1 class="title">Login</h1>
+    <div class="columns is-mobile is-centered has-background-warning-light p-5">
+      <div class="column is-half">
+        <h1 class="title">Register</h1>
+        <b-field label="First Name">
+          <b-input type="text"></b-input>
+        </b-field>
+
+        <b-field label="Last Name">
+          <b-input type="text"></b-input>
+        </b-field>
+
         <b-field label="Email">
           <b-input type="email"></b-input>
         </b-field>
+
         <b-field label="Password">
-          <b-input type="password" password-reveal></b-input>
+          <b-input type="password"></b-input>
         </b-field>
-              <button class="button is-success" @click="login">
-                Login
+              <button class="button is-success" @click="register">
+                Create new user
               </button>
-      <div class="p-8">
-           <h2 class="subtitle is-6">If you do not have an account, please <a class="tag is-info is-medium" href="/users">register here</a></h2>
-      </div>
         </div>
       </div>
       
@@ -23,17 +29,21 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "Users",
   data() {
     return {
+      firstname: "",
+      lastname: "",
       email: "",
       password: "",
     };
   },
   methods: {
-    async login() {
+    async register() {
       try {
         const credentials = {
+          name: this.firstname,
+          lastname: this.lastname,
           email: this.email,
           password: this.password,
         }
@@ -42,7 +52,7 @@ export default {
 
         const token = response.token        
 
-        this.$store.dispatch('login', token)
+        this.$store.dispatch('users', token)
     
         this.$router.push("/")
       } catch (error) {

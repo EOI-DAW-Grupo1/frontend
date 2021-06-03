@@ -1,10 +1,11 @@
+// import { userSetter } from 'core-js/fn/symbol'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
-import Menu from '../views/Menu.vue'
 import Login from '../views/Login.vue'
-import MyOrders from '../views/MyOrders.vue'
+import Users from '../views/Users.vue'
+
 
 Vue.use(VueRouter)
 
@@ -15,36 +16,19 @@ export const routes = [
     component: Home,
     meta: {hideInMenu: false}
   },
-  // {
-  //   path: '/menu',
-  //   name: 'Carta',
-  //   component: Menu,
-  //   meta: {hideInMenu: false}
-  // },
-  // {
-  //   path: '/blog',
-  //   name: 'Blog',
-  //   component: Home,
-  //   meta: {hideInMenu: false}
-  // },
-  // {
-  //   path: '/contact',
-  //   name: 'Contacto',
-  //   component: Home,
-  //   meta: {hideInMenu: false}
-  // },
+  {
+    path:'/users',
+    name:'Users',
+    component: Users,
+    meta:{hideInMenu: false}
+  },
   {
     path: '/login',
     name: 'Login',
     component: Login,
     meta: {hideInMenu: true}
   },
-  // {
-  //   path: '/my-orders',
-  //   name: 'Mis pedidos',
-  //   component: MyOrders,
-  //   meta: {hideInMenu: true, private: true}
-  // },
+ 
 ]
 
 const router = new VueRouter({

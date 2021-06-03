@@ -1,15 +1,13 @@
 <template>
-  <div class="column is-4">
-    <div class="services-wrap is-flex">
+  <div class="column is-half is-offset-one-quarter">
 
-        <div class="text p-4">
-            <h3>{{value.title}}</h3>
-            <h4>{{value.published_at}}</h4>
-            <h4>{{value.category}}</h4>
-            <p>{{value.excerpt}}</p>
+        <div class=" box m-1 ">
+            <h3 class="is-size-5 has-text-weight-semibold">{{value.title}}</h3>
+            <h4 class="tag has-background-danger-light is-rounded">{{value.published_at}}</h4>
+            <h4 class="tag has-background-primary-light is-rounded">{{value.category}}</h4>
+            <p class=" subtitle-5">{{value.excerpt}}</p>
         </div>
         
-    </div>
 </div>
 </template>
 
